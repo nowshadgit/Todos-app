@@ -1,0 +1,23 @@
+.page-link {
+  color: #777777;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  :hover {
+    color: red;
+  }
+}
+.page-link:hover {
+  z-index: 2;
+  color: #467ac7;
+  text-decoration: none;
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+}
+.page-item.active {
+  .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #467ac7;
+    border-color: #467ac7;
+  }
+}

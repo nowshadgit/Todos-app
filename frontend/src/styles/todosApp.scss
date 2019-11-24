@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,500,600');
+@import '_variables.scss';
+@import '_mixins.scss';
+@import '~bootstrap/scss/bootstrap.scss';
+
+
+// Override Bootstrap Style
+body {
+  font-size: 14px;
+  font-family: $font-family-primary;
+}
+
+// Card Styles
+.card {
+  &.fp-card {
+    margin: auto;
+    border: none;
+    max-width: 500px;
+    border-radius: $td-card-radius;
+  }
+
+  .btn-light {
+    border: none;
+    text-decoration: none;
+  }
+
+  .fp-card-body {
+    padding: 2.5rem 3.5rem;
+  }
+
+  .fp-card-title {
+    @include fp-title;
+  }
+}
+
+// Input and Input Group Styles
+.input-group {
+  margin-bottom: 25px;
+
+  input {
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    border-bottom: 1px solid $td-grey;
+
+    &:active,
+    &:focus {
+      border-bottom: 1px solid $td-light-blue;
+    }
+  }
+  .form-control:focus {
+    box-shadow: none;
+  }
+}
+
+.input-group-text {
+  border: none;
+  border-radius: 0;
+  background: transparent;
+}
+
+// Input Placeholder Style
+input#email::-webkit-input-placeholder,
+input#password::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #c0c0c0;
+}
+input#email::-moz-placeholder,
+input#password::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #c0c0c0;
+}
+input#email:-ms-input-placeholder,
+input#password:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #c0c0c0;
+}
+input#email:-moz-placeholder,
+input#password:-moz-placeholder {
+  /* Firefox 18- */
+  color: #c0c0c0;
+}
+
+// Button
+.btn {
+  line-height: 24px;
+  border-radius: 8px;
+  padding: 0.7rem 3.4rem;
+  letter-spacing: 1.39px;
+  text-transform: uppercase;
+
+  &.onboarding-btn {
+    margin-top: 3rem;
+  }
+
+  font: {
+    weight: 600;
+    size: 1rem;
+    family: $font-family-secondary, sans-serif;
+  }
+
+  &.btn-primary {
+    color: $td-white;
+  }
+
+  &.btn-primary:not(:disabled):not(.disabled):active,
+  &.btn-primary:not(:disabled):not(.disabled).active {
+    color: $td-white;
+  }
+
+  &.btn-sm {
+    padding: 0.4rem 1.4rem;
+  }
+  &.btn-light {
+    color: $td-light-blue;
+    border: 1px solid $td-light-blue;
+    background-color: $td-white;
+  }
+
+  &.btn-greyed-out {
+    background-color: $td-light-blue;
+    border: none;
+    box-shadow: none;
+  }
+  &.btn-action {
+    color: $td-light-blue;
+    font-family: $font-family-primary, sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 0;
+  }
+  &.btn-action.add-btn {
+    box-sizing: content-box;
+    border-bottom: 1px solid $td-grey;
+    border-radius: 0;
+    text-align: left;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+
+  &.btn-action.add-btn::before {
+    content: '+';
+    position: absolute;
+    right: 35px;
+    color: $td-light-blue;
+  }
+
+  &:disabled {
+    box-shadow: none;
+    background-color: #0096db;
+    border-color: #0096db;
+  }
+
+  &.btn-light:not(:disabled):not(.disabled):active {
+    border: none;
+    color: $td-light-blue;
+    box-shadow: none;
+    background-color: transparent;
+  }
+}

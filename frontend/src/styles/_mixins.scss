@@ -1,0 +1,15 @@
+@import './_variables.scss';
+
+@mixin fp-title {
+  margin-bottom: 3rem;
+  font-weight: 500;
+  text-align: left;
+  font-family: Barlow, sans-serif;
+}
+
+@mixin fp-data-card-title {
+  font-weight: 600;
+  font-size: 12px;
+  font-family: Barlow, sans-serif;
+  margin-bottom: 0px;
+}

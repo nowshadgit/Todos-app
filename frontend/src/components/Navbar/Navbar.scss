@@ -1,0 +1,55 @@
+@import '../../styles/_variables.scss';
+
+.fp-navbar {
+  .navbar {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    background-color: $td-light-blue;
+    background-image: none;
+    color: $td-white;
+    .navbar-brand {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .logo-img {
+      width: 40%;
+      margin-right: 0.8rem;
+    }
+
+    .logo-text {
+      font-size: 20px;
+      font-weight: 500;
+      color: $td-white;
+      font-family: $font-family-secondary;
+      text-transform: uppercase;
+    }
+
+    .nav-item {
+      font-family: 'Barlow', sans-serif;
+    }
+
+    .nav-item.nav-dropdown .nav-link {
+      border-radius: 4px;
+      color: $td-white;
+    }
+
+    .dropdown-menu {
+      top: 80%;
+      right: 0px;
+      left: auto !important;
+      min-width: 7rem;
+      font-size: 14px;
+      padding: 0.2rem 0;
+      transform: translate3d(0px, 21px, 0px) !important;
+    }
+
+    .dropdown-menu .dropdown-item {
+      padding: 0.25rem 1.2rem;
+    }
+
+    .dropdown .dropdown-toggle.nav-link {
+      padding: 0;
+    }
+  }
+}

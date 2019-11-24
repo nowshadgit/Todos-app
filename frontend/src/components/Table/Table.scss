@@ -1,0 +1,42 @@
+@import '../../styles/_variables.scss';
+
+.custom-table {
+  border-radius: $td-card-radius;
+  font-size: 12px;
+  box-shadow: 0px 2px 10px #ccc;
+  table {
+    margin-bottom: 0;
+  }
+
+  th,
+  td {
+    vertical-align: middle;
+  }
+
+  th {
+    border: none;
+    text-transform: capitalize;
+    font-family: $font-family-secondary;
+    background-color: $td-table-border-color;
+    &:first-child {
+      border-top-left-radius: $td-card-radius;
+    }
+    &:last-child {
+      border-top-right-radius: $td-card-radius;
+    }
+  }
+
+  tr:last-child {
+    td:first-child {
+      border-bottom-left-radius: $td-card-radius;
+    }
+
+    td:last-child {
+      border-bottom-right-radius: $td-card-radius;
+    }
+  }
+
+  tbody tr:hover {
+    background: lighten($td-table-border-color, 3%);
+  }
+}

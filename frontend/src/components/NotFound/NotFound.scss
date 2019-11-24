@@ -1,0 +1,39 @@
+@import '../../styles/_variables.scss';
+
+.error-txt {
+  height: 42px;
+  width: 100%;
+  color: $td-white;
+  font-family: $font-family-secondary;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 42px;
+  text-align: center;
+}
+.error-txt1 {
+  height: 21px;
+  width: 100%;
+  color: $td-white;
+  font-family: $font-family-secondary, $font-family-primary;
+  font-size: 12px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.error-img {
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.btn-home {
+  text-align: center;
+}
+
+.error-bg {
+  height: 100vh;
+  box-sizing: border-box;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}

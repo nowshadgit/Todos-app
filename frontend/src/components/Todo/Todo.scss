@@ -1,0 +1,18 @@
+.todo{
+    font-size: 14px;
+    .todo-title{
+        font-weight: 600;
+    }
+    .todo-description{
+        
+    }
+    .delete-button{
+        background-color: transparent;
+        border: none;
+        color: red;
+    }
+    .edit-button{
+        background-color: transparent;
+        border: none;
+    }
+}

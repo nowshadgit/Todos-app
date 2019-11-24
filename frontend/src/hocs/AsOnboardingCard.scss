@@ -1,0 +1,10 @@
+@import '../styles/_variables.scss';
+
+.as-onboarding-card {
+  height: 100vh;
+  min-height: 680px;
+
+  .card-row {
+    padding-top: 5%;
+  }
+}

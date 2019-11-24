@@ -1,0 +1,18 @@
+@import '../../styles/mixins';
+
+.page-header {
+  margin: 0rem 0 1.5rem 0;
+
+  .page-title {
+    @include fp-title;
+    margin: 0;
+    // This margin has to be present after the 'fp-title' inclusion, as it
+    // overrides the mixins' margin
+    text-transform: capitalize;
+  }
+
+  button {
+    margin-left: 5px;
+    padding: 0.2rem 1.4rem !important;
+  }
+}

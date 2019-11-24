@@ -1,0 +1,10 @@
+@import '../../styles/_variables.scss';
+
+.login-form {
+  .input-group-text {
+    padding-left: 0;
+  }
+  .create-account{
+    color: $td-light-blue
+  }
+}
